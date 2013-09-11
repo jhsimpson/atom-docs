@@ -2,4 +2,5 @@
 FAQ
 ===
 
-Hello world!
+Why it never works?
+- Because you never read the docs!
