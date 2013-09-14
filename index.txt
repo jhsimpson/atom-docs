@@ -1,6 +1,14 @@
-===
-FAQ
-===
+========
+AtoM FAQ
+========
 
-Why it never works?
-- Because you never read the docs!
+.. toctree::
+   :maxdepth: 2
+
+   general
+   install
+   usage
+   help
+   admin
+   contributing
+   troubleshooting

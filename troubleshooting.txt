@@ -1,0 +1,56 @@
+===============
+Troubleshooting
+===============
+
+This page contains some advice about errors and problems commonly encountered
+during the usage of AtoM.
+
+
+Why do I get a blank white screen?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get a 500 (Internal Server) Error?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get a "Max execution time" exceeded error?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get a "Allowed memory size" exhausted error?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get an "Index is under processing now" error?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get an "File data/index/_0.cfs is not readable." error?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get a "Unsupported segments file format" error?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get a "Too many connections" error?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get a "Class QubitActor contains 4 abstract methods" error?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get a "PHP Fatal error: Undefined class constant 'ID'" error?
+--------------------------------------------------------------------------------
+TODO
+
+Why do I get a "Zend_ACL_Exception: Parent Resource id: 'XXXXX' does not exist" error?
+--------------------------------------------------------------------------------
+TODO
+
+What should I do if I get an error that isn't described here?
+--------------------------------------------------------------------------------
+TODO
+
