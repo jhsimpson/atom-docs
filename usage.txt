@@ -1,3 +1,5 @@
+.. _faq-usage:
+
 =====
 Usage
 =====
@@ -5,4 +7,6 @@ Usage
 
 Can I remove/add descriptive levels?
 ------------------------------------
-Yes, you can add and remove levels of description. See Add a new term in the ICA-AtoM user manual or Delete a term in the user manual. In the Manage menu select Taxonomies. Select Levels of description from the List of Taxonomies.
+Yes, you can add and remove levels of description. See Add a new term in the
+AtoM user manual or Delete a term in the user manual. In the Manage menu select
+Taxonomies. Select Levels of description from the List of Taxonomies.

@@ -2,6 +2,14 @@
 AtoM FAQ
 ========
 
+.. WARNING::
+
+   These documents are a **work in progress** and we have not yet migrated all
+   of our FAQ content. `Artefactual <http://www.artefactual.com/>`__ (lead
+   developers of AtoM) will be reviewing and updating all FAQ documents for
+   2.0 before migrating them here, but for now, you can find our old FAQ at:
+   https://www.qubit-toolkit.org/wiki/FAQ
+
 .. toctree::
    :maxdepth: 2
 
@@ -12,3 +20,4 @@ AtoM FAQ
    admin
    contributing
    troubleshooting
+
