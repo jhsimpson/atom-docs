@@ -1,8 +1,8 @@
 .. _about-docs:
 
-================================================================
-|info-sign| About these documents (and how you can improve them)
-================================================================
+=================================
+|info-sign| About these documents
+=================================
 
 .. |info-sign| image:: images/info-sign.png
    :height: 25
@@ -106,6 +106,7 @@ contribute to our documentation is included :ref:`below
 
 .. _about-contribute-docs:
 
+================================
 |group| Contribute documentation
 ================================
 
@@ -129,7 +130,7 @@ improve its documentation:
 .. _contribute-via-email:
 
 |comments| Suggest minor fixes to Artefactual
----------------------------------------------
+=============================================
 
 .. |comments| image:: images/comments.png
    :height: 23
@@ -165,7 +166,7 @@ the time or resources to fix the problem yourself, we want to hear from you!
 .. _contribute-docs-yourself:
 
 |edit| Contribute documentation yourself
-----------------------------------------
+========================================
 
 .. |edit| image:: images/edit-sign.png
    :height: 23
@@ -177,7 +178,7 @@ screenshots, or alternative workflows? Help us improve our documentation by
 submitting new or revised content yourself!
 
 * **See our instructions on how to contibute documentation in the AtoM
-  Administrator's Manual**
+  Administrator's Manual** (coming soon)
 
 **SEE ALSO**
 
@@ -195,7 +196,7 @@ submitting new or revised content yourself!
 .. _contribute-docs-translations:
 
 |globe2| Contribute documentation translations
-----------------------------------------------
+==============================================
 
 .. |globe2| image:: images/globe.png
    :height: 23
@@ -208,7 +209,7 @@ application. Currently we are using `Transifex
 translations.
 
 * **See our instructions on how to contribute documentation translations in the
-  AtoM Administrator's Manual**
+  AtoM Administrator's Manual** (coming soon)
 
 **SEE ALSO**
 
