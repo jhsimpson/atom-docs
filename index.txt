@@ -8,6 +8,10 @@
    :height: 25
    :width: 25
 
+.. |github| image:: images/github.png
+   :height: 17
+   :width: 17
+
 In August 2013, in preparation for the launch of AtoM 2.0.0, `Artefactual
 Systems <http://www.artefactual.com>`__, lead developers of the `AtoM
 <http://www.accesstomemory.org/>`__ project, began work to rewrite all project
@@ -104,6 +108,16 @@ contribute to our documentation is included :ref:`below
    additional formats, users will be able to view and print documentation more
    easily, across a wider range of platforms and devices.
 
+.. SEEALSO::
+
+   * `Sphinx Documentation <http://sphinx-doc.org/>`__
+   * `reStructuredText Documentation
+     <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`__
+   * |github| `The AtoM Documentation GitHub repository
+     <https://github.com/artefactual/atom-docs>`__
+
+:ref:`Back to top <about-docs>`
+
 .. _about-contribute-docs:
 
 ================================
@@ -172,26 +186,120 @@ the time or resources to fix the problem yourself, we want to hear from you!
    :height: 23
    :width: 23
 
+**WORK IN PROGRESS!**
+
 Is there a section missing from our documentation that you'd like to see? Or a
 section that you'd like to improve by adding clearer instructions, more
 screenshots, or alternative workflows? Help us improve our documentation by
 submitting new or revised content yourself!
 
-* **See our instructions on how to contibute documentation in the AtoM
-  Administrator's Manual** (coming soon)
+The following instructions will show you how to contribute changes to our
+documentation straight from our `GitHub <https://github.com/>`__ repository
+(`here <https://github.com/artefactual/atom-docs/>`__), using GitHub's user
+interface, which provides all the tools you need - including a text editor!
+If you are a more advanced user, you can do this from your own computer using
+a text editor and the command-line - see GitHub's incredibly useful
+`Help <https://help.github.com/>`__ documentation for guidance.
 
-**SEE ALSO**
+**Before you begin, you should:**
 
-* `Sphinx Documentation <http://sphinx-doc.org/>`__
-* `reStructuredText Documentation
+* Create a GitHub account if you don't have one already: go to
+  https://github.com/ and sign up - it's easy!
+* Read our :ref:`Contribution guidelines <contribute-guide>`, below
+* Familiarlize yourself with `Sphinx <http://sphinx-doc.org/>`__ and
+  `reStructuredText
   <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`__
-* |github| `The AtoM Documentation Github repository
+
+**An overview of the steps:**
+
+* Log into your Github account
+* Navigate to our |github| `AtoM Documentation GitHub repository
   <https://github.com/artefactual/atom-docs>`__
+* :ref:`contribute-fork-atom-docs`
+* :ref:`contribute-github-edit`
+* :ref:`contribute-commit-changes`
+* :ref:`contribute-pull-request`
 
-.. |github| image:: images/github.png
-   :height: 17
-   :width: 17
+.. _contribute-fork-atom-docs:
 
+Fork the AtoM Documentation repository in GitHub
+------------------------------------------------
+
+1. First, sign into your GitHub account at https://github.com
+2. Navigate to Artefactual's AtoM Documentation repository: you can do this
+   through the user interface by typing *artefactual/atom-docs* into the
+   search bar at the top of the page:
+
+.. image:: images/git-atom-docs.*
+   :align: center
+   :width: 50%
+   :alt: An image of the GitHub search bar
+
+3. At the top of the page, click the "Fork" button. If you have more than one
+   repository, you'll be given an option to choose where the fork will be
+   created.
+
+.. image:: images/git-fork.*
+   :align: center
+   :width: 50%
+   :alt: An image of the GitHub Fork button
+
+4. GitHub will create a copy of the entire *atom-docs* repository in your
+   chosen location (or in your own new repository if this is your first time
+   using GitHub). Now you can edit to your heart's content without fear of
+   breaking our production website or making the documents unavailable to
+   other users. At the top of the page, you'll see that now atom-docs is in
+   your own repository (indicated by your chosen user name):
+
+.. image:: images/git-fork-success.*
+   :align: center
+   :width: 50%
+   :alt: An image of the GitHub header after a successful forking
+
+.. SEEALSO::
+
+  GitHub Help has a great overview of how to fork which includes instructions
+  for cloning the fork in your local machine, if you prefer to work there:
+  https://help.github.com/articles/fork-a-repo
+
+
+Navigate to where you want to add or edit documents
+---------------------------------------------------
+
+content
+
+
+.. _contribute-github-edit:
+
+Use GitHub's editor to make changes or additions
+------------------------------------------------
+
+content
+
+.. _contribute-commit-changes:
+
+Commit the changes
+------------------
+
+content
+
+.. _contribute-pull-request:
+
+Submit a pull request to Artefactual
+------------------------------------
+
+content
+
+:ref:`Back to top <about-docs>`
+
+.. _contribute-guide:
+
+Documentation contribution guidelines
+=====================================
+
+TO DO
+
+:ref:`Back to top <about-docs>`
 
 .. _contribute-docs-translations:
 
