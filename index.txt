@@ -12,6 +12,10 @@
    :height: 17
    :width: 17
 
+.. |gitadd| image:: images/git-add.png
+   :height: 16
+   :width: 15
+
 In August 2013, in preparation for the launch of AtoM 2.0.0, `Artefactual
 Systems <http://www.artefactual.com>`__, lead developers of the `AtoM
 <http://www.accesstomemory.org/>`__ project, began work to rewrite all project
@@ -196,10 +200,10 @@ submitting new or revised content yourself!
 The following instructions will show you how to contribute changes to our
 documentation straight from our `GitHub <https://github.com/>`__ repository
 (`here <https://github.com/artefactual/atom-docs/>`__), using GitHub's user
-interface, which provides all the tools you need - including a text editor!
-If you are a more advanced user, you can do this from your own computer using
-a text editor and the command-line - see GitHub's incredibly useful
-`Help <https://help.github.com/>`__ documentation for guidance.
+interface (GitHub Flow), which provides all the tools you need - including a
+text editor! If you are a more advanced user, you can do this from your own
+computer using a text editor and the command-line - see GitHub's incredibly
+useful `Help <https://help.github.com/>`__ documentation for guidance.
 
 **Before you begin, you should:**
 
@@ -213,17 +217,29 @@ a text editor and the command-line - see GitHub's incredibly useful
 **An overview of the steps:**
 
 * Log into your Github account
-* Navigate to our |github| `AtoM Documentation GitHub repository
-  <https://github.com/artefactual/atom-docs>`__
-* :ref:`contribute-fork-atom-docs`
+* :ref:`Find the document you want to edit <contribute-find-doc>`
 * :ref:`contribute-github-edit`
 * :ref:`contribute-commit-changes`
 * :ref:`contribute-pull-request`
 
-.. _contribute-fork-atom-docs:
+.. SEEALSO::
 
-Fork the AtoM Documentation repository in GitHub
-------------------------------------------------
+   * `Overview of GitHub Flow
+     <https://github.com/blog/1557-github-flow-in-the-browser>`__
+   * `GitHub Help <https://help.github.com>`__
+   * `Git homepage <http://git-scm.com/>`__
+   * `Learn git in your browser! <http://try.github.io/levels/1/challenges/1>`__
+   * GitHub also has clients for `Windows <https://help.github.com/categories/58/articles>`__
+     and `Mac <https://help.github.com/categories/31/articles>`__ if you prefer
+     to work locally, but are intimidated by the command line!
+   * Checkout the `GitHub Glossary <https://help.github.com/articles/github-glossary>`__
+     to learn more about frequently used terms such as "fork", "branch",
+     "repository", and "commit".
+
+.. _contribute-find-doc:
+
+Find the document you want to edit (or the place to add a new one)
+------------------------------------------------------------------
 
 1. First, sign into your GitHub account at https://github.com
 2. Navigate to Artefactual's AtoM Documentation repository: you can do this
@@ -235,25 +251,89 @@ Fork the AtoM Documentation repository in GitHub
    :width: 50%
    :alt: An image of the GitHub search bar
 
-3. At the top of the page, click the "Fork" button. If you have more than one
-   repository, you'll be given an option to choose where the fork will be
-   created.
+.. NOTE:: What is a git repository?
 
-.. image:: images/git-fork.*
+   A repository, or "repo", is simply a directory which contains your project
+   work, as well as a few files which are used to communicate with Git.
+   Repositories can exist either locally on your computer or as a remote copy
+   (such as on GitHub.com). These instructions will show you how to create
+   your own repository on GitHub.com, and then use this to submit changes to
+   the AtoM documentation repository.
+
+3. GitHub's user interface provides a graphical file-explorer to help you
+   navigate through the text files in our documentation repository. The AtoM
+   documentation repository's files are organized into folders that mimic the
+   structure of the user manual found on the
+   `home page <https://www.accesstomemory.org/docs/>`__ - for
+   example, all files that relate to the User Manual section called "Add/Edit
+   Content" are grouped together in a file called "add-edit-content". In
+   GitHub, click on a folder to view its contents. Click on a .txt file to
+   open it in-page.
+
+.. image:: images/git-view.*
    :align: center
    :width: 50%
-   :alt: An image of the GitHub Fork button
+   :alt: An image of GitHub's repository browser
 
-4. GitHub will create a copy of the entire *atom-docs* repository in your
+.. TIP::
+
+   .. image:: images/git-branch.*
+      :align: right
+      :width: 21%
+      :alt: An image of the GitHub branch button
+
+   Can't find the right spot in GitHub? Don't forget to check the "Branch"
+   drop-down - *atom-docs* is organized into several different branches, with
+   the About/Contribute and FAQ docs on a different branch than the User and
+   Admin manuals. Additionally, as we create new versions of our
+   documentation for each major release, we will create new branches (2.0,
+   2.1, 2.2, etc) - so make sure you are editing or adding to the correct
+   branch! Ideally, you will add fixes to the most recent docs, so we can
+   carry those improvements forward.
+
+4. If you are **adding a new page**, navigate into the correct folder, and
+   click the |gitadd| "Add" icon next to the file path at the top of the page.
+
+.. image:: images/git-add-file.*
+   :align: center
+   :width: 50%
+   :alt: An image of the GitHub "Add file" button
+
+5. If you are **editing an existing page**, navigate to the correct text file,
+   so that you can see its contents previewed on GitHub's interface. Then,
+   click the "Edit" button found above the file preview:
+
+.. image:: images/git-edit-button.*
+   :align: center
+   :width: 50%
+   :alt: An image of the GitHub "Edit" button
+
+.. TIP::
+
+   If you find it easier to navigate to the document you want to edit on the
+   Access to Memory website, we've included a link directly to the related
+   page in our GitHub repository in the right-hand navigation bar. You can
+   find the page here on our website, and then click the "Source code" link
+   in the sidebar - AtoM will redirect you to the relevant file in our
+   *atom-docs* GitHub repository.
+
+   .. image:: images/atom-git-link.*
+      :align: center
+      :width: 40%
+      :alt: An image of the AtoM documentation sidebar
+
+6. GitHub will create a copy of the entire *atom-docs* repository in your
    chosen location (or in your own new repository if this is your first time
    using GitHub). Now you can edit to your heart's content without fear of
    breaking our production website or making the documents unavailable to
-   other users. At the top of the page, you'll see that now atom-docs is in
-   your own repository (indicated by your chosen user name):
+   other users. In git, this is known as "forking". At the top of the page,
+   you'll see that now atom-docs is in your own repository (indicated by your
+   chosen user name). You'll also see this message above the file editor, to
+   remind you:
 
-.. image:: images/git-fork-success.*
+.. image:: images/git-fork-msg.*
    :align: center
-   :width: 50%
+   :width: 80%
    :alt: An image of the GitHub header after a successful forking
 
 .. SEEALSO::
@@ -263,32 +343,193 @@ Fork the AtoM Documentation repository in GitHub
   https://help.github.com/articles/fork-a-repo
 
 
-Navigate to where you want to add or edit documents
----------------------------------------------------
-
-content
-
-
 .. _contribute-github-edit:
 
 Use GitHub's editor to make changes or additions
 ------------------------------------------------
 
-content
+7. When you click the "Edit" button above the text file preview, a copy of the
+   *atom-docs* repository is made in your repository (associated with your
+   GitHub account), and you'll be redirected to a web-based text editor, where
+   you can make changes to the file via your web browser. If you are adding a
+   new page, the text editor will be blank when it opens, and you can begin
+   entering text. A full-screen option (called "zen mode") is included on the
+   header bar if you need more space to work.
+
+.. image:: images/git-edit.*
+   :align: center
+   :width: 50%
+   :alt: An image of the GitHub Ace editor
+
+8. Make the changes you want to the file. When you are done, scroll to the
+   bottom of the page - next we will commit the changes.
+
+.. IMPORTANT::
+
+   Please review our :ref:`Contribution guidelines <contribute-guide>`
+   **before** submitting any changes. Thanks!
+
+
+.. SEEALSO::
+
+   * GitHub Help's entry on `editing files <https://help.github.com/articles/editing-files>`__
+   * GitHub Help's entry on `creating new files <https://help.github.com/articles/creating-new-files>`__
+   * GitHub Help's entry on `moving files <https://help.github.com/articles/moving-a-file-to-a-new-location>`__
+   * GitHub Help's entry on `renaming files <https://help.github.com/articles/renaming-a-file>`__
+   * GitHub's built-in text editor uses the Ace Editor - you can read more about
+     this open-source project `here <http://ace.c9.io/#nav=about>`__
 
 .. _contribute-commit-changes:
 
 Commit the changes
 ------------------
 
-content
+9. When you are finished editing and/or adding files in the text editor,
+   scroll to the bottom of the page. You will see a box with several text
+   fields to fill in before submitting your changes.
+
+* **Commit Summary:** This is a required field. GitHub Help describes a
+  "commit" as such: *"Think of a commit as a snapshot of your project – code,
+  files, everything — at a particular point in time"*. Your commit summary is
+  a concise way to summarize the changes to the project that users will find
+  in the commit. **Commit summaries must be 50 characters or less:** this is
+  more like a brief title so users can determine what has taken place at a
+  glance. Keep it brief and to the point.
+* **Extended description:** This is an optional field, which we at Artefactual
+  recommend using if you plan on editing our documentation. This is your
+  chance to explain at greater length what the changes you made were, and why
+  you felt you should make them. A concise message here will help us
+  understand your work, and allow us to merge it into our documentation more
+  quickly!
+
+.. image:: images/git-commit.*
+   :align: center
+   :width: 50%
+   :alt: An image of the GitHub commit fields
+
+.. NOTE:: What is a commit?
+
+   A commit, or "revision", is an individual change to a file (or set of
+   files). It's like when you save a file, except with Git, every time you
+   save it creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to
+   keep record of what changes where made when and by who. Commits usually
+   contain a commit message which is a brief description of what changes were
+   made. (GitHub Glossary)
+
+10. Once you've added a commit summary (required) and an extended description
+    (recommended), click the "Propose File Change" button. GitHub will branch
+    your changes, and redirect you to a page where you can compare the changes
+    to the original, as well as submit a "pull request" to the AtoM
+    documentation repository.
+
+.. NOTE:: What is a git branch?
+
+   If you're making an app, a website, or working on documentation
+   collaboratively, you might have a bunch of different features, ideas, or
+   revisions in progress at any given time - some of which are ready to go,
+   and others which are not. By default, the main branch of a repository is
+   usually named "master" - in the AtoM documentation repository, we name
+   each main branch after the documentation version it represents (for
+   example, 2.0, 2.1, 2.2, about-contribute, faq). By "branching" away from
+   the main code, you create a separate instance in which you can work on
+   your changes, and then, when they've been reviewed and tested, merge them
+   back into the main project. This allows multiple people to collaborate at
+   once, and a single person to work on multiple different revisions at the
+   same time without having to finish them all on the same schedule.
+
+   With these instructions, GitHub is handling the branching automatically,
+   so you don't have to worry! But now you know a bit more about how git (and
+   GitHub) works. Find out more about git `here <http://git-scm.com/>`__.
 
 .. _contribute-pull-request:
 
 Submit a pull request to Artefactual
 ------------------------------------
 
-content
+11. Once you've finished your changes and clicked the "Propose File Change"
+    button, GitHub will redirect you to a new page. On the bottom half of the
+    page, you'll see a graphical representation of the changes you've made -
+    the red fields with the **-** minus symbol in the sidebar indicate content
+    that was changed/removed, while the green fields with the **+** plus
+    symbol in the sidebar indicate the new content that was added. When you
+    submit your changes to Artefactual, we'll be able to see this too - it
+    offers us a quick way to understand where you've made changes, what was
+    changed, and why.
+
+.. image:: images/git-diff.*
+   :align: center
+   :width: 50%
+   :alt: An image of the GitHub diff summary
+
+12. At the top of the page, you'll see your commit summary and description,
+    with a reminder above it from GitHub (in blue) that the changes are still
+    only in your repository. To submit them to Artefactual for inclusion in
+    the AtoM documentation, click the "Send pull request" button on the right-
+    hand side of the page.
+
+.. image:: images/git-send-pull.*
+   :align: center
+   :width: 50%
+   :alt: An image of the GitHub pull request button
+
+.. NOTE:: What's a pull request?
+
+   Pull requests are proposed changes to a repository submitted by a user and
+   accepted or rejected by a repository's collaborators (in this case,
+   Artefactual, the maintainers of the AtoM documentation.
+
+13. The page will reload with information about your pull request - you can
+    see a summary of what you want to merge where at the top of the page (i.e.
+    your patch or fix into one of our documentation branches). Your commit
+    message and summary will be below - we'll see a similar message on our end
+    when we receive the request.
+
+ .. image:: images/git-pull.*
+   :align: center
+   :width: 50%
+   :alt: An image of a submitted GitHub pull request
+
+.. SEEALSO::
+
+   GitHub Help's page on `using pull requests
+   <https://help.github.com/articles/using-pull-requests#pull-request-discussion>`__
+
+
+14. Artefactual will receive your pull request, and one of our Product
+    Managers will review the changes. If there's a problem, we can send you a
+    message via GitHub, or even `begin a discussion
+    <https://help.github.com/articles/using-pull-requests#pull-request-discussion>`__
+    right on the code! This way, if there's something we don't understand
+    about the changes you've made, we can connect with you directly.
+15. Once we've accepted the pull request and merged it into our repository,
+    you'll get a notification (you'll probably get an email too, unless you've
+    changed your default GitHub account settings):
+
+ .. image:: images/git-pull-note.*
+   :align: center
+   :width: 50%
+   :alt: An image of a GitHub notification
+
+16. Clicking on the notification will show you details about it:
+
+ .. image:: images/git-pull-details.*
+   :align: center
+   :width: 50%
+   :alt: An image of GitHub notification details on an accepted pull request
+
+17. Success! Your contributions have been accepted, and merged into the AtoM
+documents! You should be able to go to our website and see them in the
+documentation.
+
+
+**QUESTIONS?**
+
+If there's something that you're not clear about in these instructions, or
+you've run into an unexpected error, send us an email at
+webmaster@artefactual.com, or make a post in the AtoM `User Forum
+<https://groups.google.com/forum/#!forum/ica-atom-users>`__!
+
+
 
 :ref:`Back to top <about-docs>`
 
