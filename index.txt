@@ -190,8 +190,6 @@ the time or resources to fix the problem yourself, we want to hear from you!
    :height: 23
    :width: 23
 
-**WORK IN PROGRESS!**
-
 Is there a section missing from our documentation that you'd like to see? Or a
 section that you'd like to improve by adding clearer instructions, more
 screenshots, or alternative workflows? Help us improve our documentation by
@@ -216,7 +214,7 @@ useful `Help <https://help.github.com/>`__ documentation for guidance.
 
 **An overview of the steps:**
 
-* Log into your Github account
+* Create and/or log into your Github account
 * :ref:`Find the document you want to edit <contribute-find-doc>`
 * :ref:`contribute-github-edit`
 * :ref:`contribute-commit-changes`
@@ -241,17 +239,19 @@ useful `Help <https://help.github.com/>`__ documentation for guidance.
 Find the document you want to edit (or the place to add a new one)
 ------------------------------------------------------------------
 
-1. First, sign into your GitHub account at https://github.com
+1. First, sign into your GitHub account at https://github.com (if you don't
+   have an account yet, you'll need to create one first. You can do this on
+   the same page.)
 2. Navigate to Artefactual's AtoM Documentation repository: you can do this
    through the user interface by typing *artefactual/atom-docs* into the
    search bar at the top of the page:
 
 .. image:: images/git-atom-docs.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of the GitHub search bar
 
-.. NOTE:: What is a git repository?
+.. NOTE:: **What is a git repository?**
 
    A repository, or "repo", is simply a directory which contains your project
    work, as well as a few files which are used to communicate with Git.
@@ -272,7 +272,7 @@ Find the document you want to edit (or the place to add a new one)
 
 .. image:: images/git-view.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of GitHub's repository browser
 
 .. TIP::
@@ -305,7 +305,7 @@ Find the document you want to edit (or the place to add a new one)
 
 .. image:: images/git-edit-button.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of the GitHub "Edit" button
 
 .. TIP::
@@ -315,7 +315,7 @@ Find the document you want to edit (or the place to add a new one)
    page in our GitHub repository in the right-hand navigation bar. You can
    find the page here on our website, and then click the "Source code" link
    in the sidebar - AtoM will redirect you to the relevant file in our
-   *atom-docs* GitHub repository.
+   *atom-docs.git* repository.
 
    .. image:: images/atom-git-link.*
       :align: center
@@ -358,7 +358,7 @@ Use GitHub's editor to make changes or additions
 
 .. image:: images/git-edit.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of the GitHub Ace editor
 
 8. Make the changes you want to the file. When you are done, scroll to the
@@ -394,7 +394,9 @@ Commit the changes
   a concise way to summarize the changes to the project that users will find
   in the commit. **Commit summaries must be 50 characters or less:** this is
   more like a brief title so users can determine what has taken place at a
-  glance. Keep it brief and to the point.
+  glance. Keep it brief and to the point. Check out these
+  `guidelines <http://git-scm.com/book/ch5-2.html#Commit-Guidelines>`__ in
+  the Git documentation
 * **Extended description:** This is an optional field, which we at Artefactual
   recommend using if you plan on editing our documentation. This is your
   chance to explain at greater length what the changes you made were, and why
@@ -404,10 +406,10 @@ Commit the changes
 
 .. image:: images/git-commit.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of the GitHub commit fields
 
-.. NOTE:: What is a commit?
+.. NOTE:: **What is a commit?**
 
    A commit, or "revision", is an individual change to a file (or set of
    files). It's like when you save a file, except with Git, every time you
@@ -422,7 +424,7 @@ Commit the changes
     to the original, as well as submit a "pull request" to the AtoM
     documentation repository.
 
-.. NOTE:: What is a git branch?
+.. NOTE:: **What is a git branch?**
 
    If you're making an app, a website, or working on documentation
    collaboratively, you might have a bunch of different features, ideas, or
@@ -448,17 +450,17 @@ Submit a pull request to Artefactual
 
 11. Once you've finished your changes and clicked the "Propose File Change"
     button, GitHub will redirect you to a new page. On the bottom half of the
-    page, you'll see a graphical representation of the changes you've made -
-    the red fields with the **-** minus symbol in the sidebar indicate content
-    that was changed/removed, while the green fields with the **+** plus
-    symbol in the sidebar indicate the new content that was added. When you
-    submit your changes to Artefactual, we'll be able to see this too - it
-    offers us a quick way to understand where you've made changes, what was
-    changed, and why.
+    page, you'll see a "diff" - a graphical representation of the changes
+    you've made - the red fields with the **-** minus symbol in the sidebar
+    indicate content that was changed/removed, while the green fields with the
+    **+** plus symbol in the sidebar indicate the new content that was added.
+    When you submit your changes to Artefactual, we'll be able to see this too
+    - it offers us a quick way to understand where you've made changes, what
+    was changed, and why.
 
 .. image:: images/git-diff.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of the GitHub diff summary
 
 12. At the top of the page, you'll see your commit summary and description,
@@ -469,7 +471,7 @@ Submit a pull request to Artefactual
 
 .. image:: images/git-send-pull.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of the GitHub pull request button
 
 .. NOTE:: What's a pull request?
@@ -484,9 +486,9 @@ Submit a pull request to Artefactual
     message and summary will be below - we'll see a similar message on our end
     when we receive the request.
 
- .. image:: images/git-pull.*
+.. image:: images/git-pull.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of a submitted GitHub pull request
 
 .. SEEALSO::
@@ -505,22 +507,21 @@ Submit a pull request to Artefactual
     you'll get a notification (you'll probably get an email too, unless you've
     changed your default GitHub account settings):
 
- .. image:: images/git-pull-note.*
+.. image:: images/git-pull-note.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of a GitHub notification
 
 16. Clicking on the notification will show you details about it:
 
- .. image:: images/git-pull-details.*
+.. image:: images/git-pull-details.*
    :align: center
-   :width: 50%
+   :width: 60%
    :alt: An image of GitHub notification details on an accepted pull request
 
-17. Success! Your contributions have been accepted, and merged into the AtoM
-documents! You should be able to go to our website and see them in the
-documentation.
-
+17. **Success!** Your contributions have been accepted, and merged into the AtoM
+documents. You should be able to go to our website and see them in the
+documentation. Thanks for helping out!
 
 **QUESTIONS?**
 
@@ -529,8 +530,6 @@ you've run into an unexpected error, send us an email at
 webmaster@artefactual.com, or make a post in the AtoM `User Forum
 <https://groups.google.com/forum/#!forum/ica-atom-users>`__!
 
-
-
 :ref:`Back to top <about-docs>`
 
 .. _contribute-guide:
@@ -538,7 +537,82 @@ webmaster@artefactual.com, or make a post in the AtoM `User Forum
 Documentation contribution guidelines
 =====================================
 
-TO DO
+**WORK IN PROGRESS**
+
+So you're thinking of contributing to our documentation? See something that
+needs fixing, or something that could be improved? Great! Below you'll find some
+helpful guidelines to get you started, and to familiarize you with the
+approach we have been trying to follow.
+
+In general, there are two main types of contributions:
+
+* **General improvements:** typo corrections, fixing broken refs or links,
+  correcting inaccurate or out-of-date information, and offering better
+  explanations through clearer writing and additional examples.
+* **New features or new pages:** Adding a page of documentation that we
+  haven't yet covered in our ongoing rewrite attempts as we move platforms, or
+  documenting a new feature that has been added to AtoM since the last
+  release.
+
+We welcome both kinds of contributions from our users, and are always aiming
+to improve our documentation as much and as often as possible. To maintain a
+sense of consistency and quality over time, here are a few tips:
+
+**BEFORE CONTRIBUTING**
+
+1. **Read through some of the documents we've already created.** You'll notice
+   that there is a consistent structure to most of them, which we will
+   describe in greater detail below. By reading through some of our existing
+   documentation, you will get a feeling for the overall structure and style.
+   By looking at the source code (there's always a link to the source code in
+   the sidebar), you can see how we've used Sphinx to style and structure the
+   page.
+2. **Familiarize yourself with Sphinx and reStructuredText before starting**:
+   As outlined above in our :ref:`About <about-docs>` section, we are using
+   the `Sphinx <http://sphinx-doc.org/index.html>`__ Python Documentation
+   Generator to produce the AtoM documentation. Sphinx employs
+   `reStructured Text <http://docutils.sf.net/rst.html>`__ as its markup
+   language, and you'll need to understand how to use its syntax if you want
+   to contribute. The "First Steps with Sphinx"
+   (`here <http://sphinx-doc.org/tutorial.html>`__) is a great introduction
+   to some of the key elements of Sphinx, and the reStructuredText Primer
+   (`here <http://sphinx-doc.org/rest.html#rst-primer>`__) will introduce you
+   to the key characteristics of reST.
+3. **Examine the AtoM documentation**
+   `glossary <https://www.accesstomemory.org/docs/2.0/user-manual/glossary/glossary/>`__:
+   over the years, we have been adding to this glossary in an attempt to be
+   consistent with how we refer to different parts of the application. You
+   should try to use the same terms to refer to different parts of AtoM in
+   your contributions, and you should link to the glossary (using the
+   ``:term:`` reST markup) whenever possible - in general, we try to link a
+   term the first time it is used in any paragraph.
+4. **Make your contributions in the right place:** Are you contributing to the
+   latest version of our docs, so that these improvements will be carried
+   forward in the next version? Are you looking to edit the FAQ, but only able
+   to find the User Manual? AtoM documentation is hosted on GitHub (`here
+   <https://github.com/artefactual/atom-docs>`__), and it is kept in multiple
+   "`branches <https://help.github.com/articles/github-glossary#branch>`__"
+   - we have an *about-contribute* branch (where these documents live), an *faq*
+   branch, and a branch for every major release version of our software (e.g.
+   2.0, 2.1, 2.2, etc), where the User manual and the Administrator's manual
+   are maintained. We will also be creating a development branch, where all new
+   documentation will be added. Take a look around our repository or read the
+   contribution instructions :ref:`above <contribute-docs-yourself>` for more
+   information. If you're going to submit documentation for the User or Admin
+   manuals, make sure you're submitting it to the development branch, so it is
+   included in our next version!
+
+**If you are contributing new documentation**
+
+* **Start with an overview:**
+* **Discuss how this is applied in AtoM:**
+* **Offer quick links to the key sections of the page:**
+* **Include comprehensive steps for every action:**
+* **Include "Back to top" links at the end of major sections**
+
+* Include examples of all admonitions
+* Naming conventions for new files/refs?
+*
 
 :ref:`Back to top <about-docs>`
 
