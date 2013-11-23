@@ -52,6 +52,7 @@ contribute to our documentation is included :ref:`below
 
 * :ref:`Why move to Sphinx? <about-why-sphinx>`
 * :ref:`Contribute documentation <about-contribute-docs>`
+* :ref:`contribute-guide`
 
 .. _about-why-sphinx:
 
@@ -145,6 +146,9 @@ improve its documentation:
 * :ref:`Contribute documentation yourself <contribute-docs-yourself>`
 * :ref:`Contribute documentation translations <contribute-docs-translations>`
 
+Also, check out our :ref:`Documentation contribution guidelines
+<contribute-guide>`!
+
 .. _contribute-via-email:
 
 |comments| Suggest minor fixes to Artefactual
@@ -203,14 +207,16 @@ text editor! If you are a more advanced user, you can do this from your own
 computer using a text editor and the command-line - see GitHub's incredibly
 useful `Help <https://help.github.com/>`__ documentation for guidance.
 
-**Before you begin, you should:**
+.. IMPORTANT::
 
-* Create a GitHub account if you don't have one already: go to
-  https://github.com/ and sign up - it's easy!
-* Read our :ref:`Contribution guidelines <contribute-guide>`, below
-* Familiarlize yourself with `Sphinx <http://sphinx-doc.org/>`__ and
-  `reStructuredText
-  <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`__
+   **Before you begin, you should:**
+
+   * Create a GitHub account if you don't have one already: go to
+     https://github.com/ and sign up - it's easy!
+   * Read our :ref:`Contribution guidelines <contribute-guide>`, below
+   * Familiarlize yourself with `Sphinx <http://sphinx-doc.org/>`__ and
+     `reStructuredText
+     <http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html>`__
 
 **An overview of the steps:**
 
