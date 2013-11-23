@@ -537,8 +537,6 @@ webmaster@artefactual.com, or make a post in the AtoM `User Forum
 Documentation contribution guidelines
 =====================================
 
-**WORK IN PROGRESS**
-
 So you're thinking of contributing to our documentation? See something that
 needs fixing, or something that could be improved? Great! Below you'll find some
 helpful guidelines to get you started, and to familiarize you with the
@@ -560,14 +558,21 @@ sense of consistency and quality over time, here are a few tips:
 
 **BEFORE CONTRIBUTING**
 
-1. **Read through some of the documents we've already created.** You'll notice
+1. **Understand that our documents are all released under a Creative Commons
+   Attribution-ShareAlike 3.0 Unported licence** (`CC BY SA
+   <http://creativecommons.org/licenses/by-sa/3.0/>`__). This means that your
+   contributions are being released to Artefactual and the AtoM community to
+   use, share, remix, and distribute as they see fit, provided any
+   distribution takes place under the same licensing. Your work will be a
+   gift to the AtoM user community, and we thank you for it!
+2. **Read through some of the documents we've already created.** You'll notice
    that there is a consistent structure to most of them, which we will
    describe in greater detail below. By reading through some of our existing
    documentation, you will get a feeling for the overall structure and style.
    By looking at the source code (there's always a link to the source code in
    the sidebar), you can see how we've used Sphinx to style and structure the
    page.
-2. **Familiarize yourself with Sphinx and reStructuredText before starting**:
+3. **Familiarize yourself with Sphinx and reStructuredText before starting**.
    As outlined above in our :ref:`About <about-docs>` section, we are using
    the `Sphinx <http://sphinx-doc.org/index.html>`__ Python Documentation
    Generator to produce the AtoM documentation. Sphinx employs
@@ -578,15 +583,14 @@ sense of consistency and quality over time, here are a few tips:
    to some of the key elements of Sphinx, and the reStructuredText Primer
    (`here <http://sphinx-doc.org/rest.html#rst-primer>`__) will introduce you
    to the key characteristics of reST.
-3. **Examine the AtoM documentation**
-   `glossary <https://www.accesstomemory.org/docs/2.0/user-manual/glossary/glossary/>`__:
-   over the years, we have been adding to this glossary in an attempt to be
-   consistent with how we refer to different parts of the application. You
-   should try to use the same terms to refer to different parts of AtoM in
-   your contributions, and you should link to the glossary (using the
-   ``:term:`` reST markup) whenever possible - in general, we try to link a
-   term the first time it is used in any paragraph.
-4. **Make your contributions in the right place:** Are you contributing to the
+4. **Examine the AtoM documentation glossary.**  Over the years, we have been
+   adding to the glossary in our User Manual in an attempt to be consistent
+   with how we refer to different parts of the application. You should try to
+   use the same terms to refer to different parts of AtoM in your
+   contributions, and you should link to the glossary (using the ``:term:``
+   reST markup) whenever possible - in general, we try to link a term the
+   first time it is used in any paragraph.
+5. **Make your contributions in the right place.** Are you contributing to the
    latest version of our docs, so that these improvements will be carried
    forward in the next version? Are you looking to edit the FAQ, but only able
    to find the User Manual? AtoM documentation is hosted on GitHub (`here
@@ -602,17 +606,261 @@ sense of consistency and quality over time, here are a few tips:
    manuals, make sure you're submitting it to the development branch, so it is
    included in our next version!
 
-**If you are contributing new documentation**
+.. figure:: images/doc-structure.*
+   :align: right
+   :figwidth: 30%
+   :width: 100%
+   :alt: An example image of our document folder structure
 
-* **Start with an overview:**
-* **Discuss how this is applied in AtoM:**
-* **Offer quick links to the key sections of the page:**
-* **Include comprehensive steps for every action:**
-* **Include "Back to top" links at the end of major sections**
+   An example illustration of the folder structure for the AtoM user manual
+   in our *atom-docs.git* repository. All files in a chapter folder share a
+   single images folder.
 
-* Include examples of all admonitions
-* Naming conventions for new files/refs?
-*
+6. **Examine our existing document structure and try to follow it:** In our
+   old User Manual wiki, each section was made up of multiple pages, leading
+   to many unnecessary pages and making it harder to navigate or find a
+   specific section. In our Sphinx rewrite we are trying to organize
+   everything in a much simpler fashion - each chapter of the manual (e.g.
+   "Getting Started," "Add/Edit Content", "Administer," etc) has its own
+   folder. Each article is contained in a single text file (rather than
+   multiple linked files). So, for example, you will find all information
+   about adding, editing, deleting, and linking archival descriptions in a
+   single place - archival-descriptions.txt. By using the different header
+   levels of reST, we define a structure to the page that is automatically
+   converted into a table of contents in the sidebar. This keeps the
+   documentation's organization simpler, and there is less searching to find
+   relevant or related information. Similary, a simple structure will allow us
+   to easily convert the HTML documentaiton into PDF and ePub formats.
+7. **Include images to help illustrate your instructions:** When possible,
+   include a screenshot showing a key part of the action you are explaining
+   that will help users understand AtoM's interface better. Make sure that
+   you have permission to use and share the content you screenshot! All
+   images are placed in an "images" subfolder that is shared by all documents
+   in a section folder - for example, all documents in the "Administer"
+   folder share a single images folder. If you have trouble adding images
+   using the instructions above, contact us at webmaster@artefactual.com and
+   we can find another way to upload them for you. We prefer using PNG
+   images, thanks!
+8. **Try to keep your writing clear and concise.** Your explanations should be
+   comprehensive, but easy to follow. The more precise your writing is, the
+   easier others will find it to follow. We also hope to have our documentation
+   translated into multiple languages in the future - keeping it simple and
+   to the point will reduce the workload in the translation process.
+9. **Use admonitions to support your work with key points or related
+   materials.** Sphinx and reST include a whole class of built-in
+   `admonitions
+   <http://docutils.sourceforge.net/docs/ref/rst/directives.html#attention>`__,
+   and we have styled several of these for inclusion in the documentation as
+   necessary. Take a look at the source code for this page to see how these are
+   written in Sphinx (there is a link to the source code in the sidebar of
+   this page):
+
+.. NOTE::
+
+   This is a note. We often use them to point out things like, "you must be
+   logged in and have sufficient edit permissions to perform this action.
+   See: User roles."
+
+.. SEEALSO::
+
+   This is used to link to related documents or external resources.
+
+.. TIP::
+
+   We use Tips to offer alternate means or useful insights into the current
+   instructions.
+
+.. IMPORTANT::
+
+   Use an Important admonition to make sure a user is aware of a key step, or
+   understands the consequences of an action.
+
+.. WARNING::
+
+   Warnings are used when an action will have irreversible consequences, such
+   as deleting a record.
+
+10. **Test your actions in an instance of AtoM before documenting them.** We
+    recommend followinging along step-by-step in AtoM as you create
+    documentation, so that you can screenshot the process as you proceed, and
+    so you don't miss any steps. If you find a bug in the software, don't
+    document the bug - let us know! You can file an issue ticket in our bug
+    tracker, `Redmine <https://projects.artefactual.com/>`__, make a post in
+    our `User Forum <https://groups.google.com/forum/#!forum/ica-atom-users>`__,
+    or email us at webmaster@artefactual.com. See our
+    `Get Support <https://www.accesstomemory.org/community/support/>`__
+    suggestions first!
+
+
+**If YOU ARE CONTRIBUTING NEW DOCUMENTATION**
+
+If you are adding a new page to the documents, or a new section covering an
+undocumented feature in our latest release, it is extra-important that you
+understand how Sphinx is strucutured, and how have tried to organize and
+present the documentation. Here are a few guidelines to help get you started:
+
+.. figure:: images/index.*
+   :align: right
+   :figwidth: 40%
+   :width: 100%
+   :alt: An example image of the toctree in user-manual/index.txt
+
+   An example illustration of the the toctree in user-manual/index.txt
+
+**Understand how the Sphinx** ``toctree`` **directive works, and remember to add
+your new page to the relevant** ``toctree``
+
+For Sphinx to be able to parse all the documents and convert them into
+multiple formats (HTML, PDF, ePub), it requires a logical structure for all
+pages. Sphinx therefore uses a table of contents tree, or ``toctree`` to
+create a map of the structure. This means that whenever a new page is added to
+the documentation, it must also be added to the appropriate ``toctree``.
+
+For example, the Admin and User manuals share an index page in the
+``atom-docs`` folder. This is the first page users land when they look at our
+documentation for a particular release, and it outlines all the
+chapters/sections, with links to each page. Here you will need to add a
+``:ref:`` link to your new page. Let's say you are adding a new page to the
+User Manual. For the page to be included in the User Manual's ``toctree``,
+navigate into the ``user-manual`` folder. There you'll find an ``index.txt``
+file that contains the path to every page in the user manual, in the order it
+should appear. If you are adding a page called ``donors.txt`` to the
+``add-edit-content`` folder (i.e. chapter), in the ``index.txt`` file's
+toctree, you would add ``add-edit-contet/donors`` in the appropriate place.
+
+.. SEEALSO::
+
+   Sphinx documentation on the use of the
+   `toctree <http://sphinx-doc.org/markup/toctree.html#toctree-directive>`__
+
+**Use the preferred naming conventions for files and** ``:ref:`` **labels**
+
+When ever you are creating a new file, saving a new image, or adding a new
+``ref`` label above a section heading, please use the following conventions:
+
+* *Make it human-readable* - The label or file name should be as close as
+  possible to the name of the file or section it refers to. You can exclude
+  stop words such as prepositions etc, but the label name itself should be
+  meaningful.
+* *Use lower case letters* - We are not using capital letters, or camelCase,
+  when naming files and labels.
+* *Separate words with hyphens* - A file about "Archival descriptions" can be
+  saved as ``archival-descriptions.txt``
+* *Save files as .txt* - Though we are using reStructured Text, to keep the
+  format simple and accessible we are saving all our files in plaintext
+  (.txt), **not** in .rst or any other formats. Please make sure the extension
+  is added explicitly - i.e. don't just save your file as ``rights-records``
+  and designate it as a plain text file - save it as ``rights-records.txt``.
+
+You can take a look in our AtoM documentation repository `here
+<https://github.com/artefactual/atom-docs>`__ or look at the source of this
+page for examples. Thanks!
+
+**Start with an overview:**
+
+We have tried to begin each page (and in some cases, each section) with an
+overview of the concepts, entities, and workflows involved in the chapter.
+See, for example, any of the pages in our User Manual's "Add/edit content"
+section. Check the User Manual Glossary for terms that can help you when doing
+this. We also like to refer to existing and relevant international standards,
+glossaries, articles, and other sources, such as:
+
+* Any of the relevant standards of the Internation Council on Archives
+  (`ICA <http://www.ica.org/10206/standards/standards-list.html>`__)
+* The Society of American Archivists' `Glossary <http://www2.archivists.org/glossary>`__
+* The InterPARES 3 `Terminology Database <http://interpares.org/ip3/ip3_terminology_db.cfm>`__
+* the ICA's `Multilingual Archival Terminolgy Database <http://www.ciscra.org/mat/>`__
+  terms that can help guide you when doing this.
+
+We are trying to make sure our documentation, and our AtoM development, is
+guided by relevant archival theory, standards, and best practices.
+Introducing these concepts is a great way to introduce a module in AtoM, and
+ensures that users understand not just how, but why.
+
+**Discuss how this is applied in AtoM:**
+
+Close the introduction by offering a brief overview on how the outlined
+theory is implemented in AtoM, what can/cannot be done using the AtoM module,
+and what will be covered in the following section.
+
+**Offer quick links to the key sections of the page:**
+
+Though a full table of contents will be available in the sidebar, it's useful
+to offer users links to the main sections of the document - this gives users
+a sense at-a-glance of what they will find on this page, and allows them to
+jump directly to relevant content.
+
+**Include comprehensive steps for every action:**
+
+Assume that a user will jump directly to a section without necessarily
+reading the documentation in order. Provide links to other parts of the
+manual - if you tell a user they can search for an archival description to
+edit it, provide a link to the "Search" documentation. Each section should
+stand on its own and be a complete and thorough overview of the steps
+required to produce a specific action in AtoM, but it should also point
+outwards to other relevant sections of the manual as needed.
+
+**Include Section links, and "Back to top" links at the end of major sections**
+
+To increase the usability of the documentation, we have been adding ``:ref:``
+links to all pages, sections, and sub-sections (and sometimes sub-sub
+sections). This will allow us to link users to a specific section of content
+from other points in the documentation, when relevant. Additionally, we've
+begun adding "Back to top" links after every major section in a page.
+
+Each page should begin with a ``:ref:`` label that follows the naming
+conventions described above, and is similar to the title of the page. This
+allows us to link to that page from the front page, but it also allows us to
+add "Back to top" links occasionally to increase the usability of a long
+document.
+
+For example, let's say you are adding a page called "Archival institutions",
+and you've just finished a section on how to "Edit an existing institution."
+The top of your document should look like this: ::
+
+      .. _archival-institutions:
+
+      =====================
+      Archival institutions
+      =====================
+
+Your new section, "Edit an existing institution", should also have its own
+``:ref:`` label, so when relevant, other users can link directly to that
+section of the page, like so: ::
+
+      .. _edit-existing-institution:
+
+      Edit an existing institution
+      ============================
+
+Because this is a major section, and not a sub (or sub-sub) section of the
+page, it's helpful for users if you further include a way for them to return
+to the overview and navigational sidebar located at the top. You could add
+the following  ``:ref:`` link: ::
+
+      :ref:`Back to top <archival-institutions>`
+
+**Link to relevant glossary terms and other sections of the manual whenever
+possible**
+
+We want to make it easy for our users to find the content they need. Whenever
+you are using a term that appears in the glossary, why not use the ``:term:``
+directive to link to it? If there is another section in the documents that
+addresses something you mention in passing, why not provide a ``:ref:`` link
+to the relevant section, in case the user wishes to investigate? This way,
+our documents can be entered from multiple points and navigated in any number
+of ways, and users will always have paths to related information and terms
+provided.
+
+**QUESTIONS?**
+
+If there's something that you're not clear about in these instructions, or
+you've run into an unexpected error, send us an email at
+webmaster@artefactual.com, or make a post in the AtoM `User Forum
+<https://groups.google.com/forum/#!forum/ica-atom-users>`__!
+
+And **THANK YOU** for helping us improve our documentation, and for giving
+back to the AtoM community.
 
 :ref:`Back to top <about-docs>`
 
