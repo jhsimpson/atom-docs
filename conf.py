@@ -13,9 +13,10 @@
 
 from __future__ import unicode_literals
 
-import sys, os
-
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+import sys
+import os
+import urllib2
+import json
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -24,15 +25,28 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 # -- General configuration -----------------------------------------------------
 
-# If your documentation needs a minimal Sphinx version, state it here.
-if not on_rtd:
-    needs_sphinx = '1.1.3'
+needs_sphinx = '1.1.3'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
     'sphinx.ext.extlinks',
+    'sphinx.ext.intersphinx',
 ]
+
+# Obtain intersphinx_mapping
+inventory = 'https://gist.githubusercontent.com/qubot/2dd2f7f96e51121061d4/raw/sphinxdoc-inventory.json'
+response = urllib2.urlopen(inventory)
+intersphinx_mapping = json.load(response)
+for item in intersphinx_mapping:
+    intersphinx_mapping[item] = tuple(intersphinx_mapping[item])
+
+# Obtain extlinks dictionary
+inventory = 'https://gist.githubusercontent.com/qubot/3969ebadc9c48574d16a/raw/sphinxdoc-extlinks.json'
+response = urllib2.urlopen(inventory)
+extlinks = json.load(response)
+for item in extlinks:
+    extlinks[item] = tuple(extlinks[item])
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
