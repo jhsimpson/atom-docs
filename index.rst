@@ -43,8 +43,7 @@ David Goodger and released into the public domain on April 2, 2002.
 
 The **Access to Memory** (`AtoM <http://www.accesstomemory.org/>`__ ) project
 welcomes community contributions to its documentation. All AtoM documents are
-publicly released under a Creative Commons Attribution-ShareAlike 3.0 Unported
-licence (`CC BY SA <http://creativecommons.org/licenses/by-sa/3.0/>`__), and
+publicly released under a Creative Commons Attribution-ShareAlike 4.0 licence (`CC BY SA <http://creativecommons.org/licenses/by-sa/4.0/>`__), and
 we rely on input, contributions, and translations from our community to make
 our documents as useful and accessible as they can be. Information on how to
 contribute to our documentation is included :ref:`below
